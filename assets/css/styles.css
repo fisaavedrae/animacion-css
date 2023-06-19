@@ -167,6 +167,12 @@ body {
 
 }
 
+.socialmedia a {
+    color: #fffbe6;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 @media (min-width:575px) {
 
     /* responsive desktop*/
@@ -297,9 +303,5 @@ body {
         border-radius: 0px 0px 15px 15px;
     }
 
-    .socialmedia {
-        padding-bottom: 10px;
-        padding-top: 20px;
 
-    }
 }
