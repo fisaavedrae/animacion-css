@@ -1,6 +1,11 @@
 # Intro
 
-Proyecto de layout sitio ecommerce usando CSS Grid para el layout, Flex para la disposición de elementos y Media Query para hacer el sitio responsivo. Desarrolló con Mobile First
+Proyecto de animación CSS, se utilizó CSS Grid para el layout, Flex para la disposición de elementos y Media Query para hacer el sitio responsivo. Desarrolló con Mobile First
+
+# Responsive Breakpoint
+
+Mobile: 575px
+Desktop: sobre 576px
 
 # Resolución
 
