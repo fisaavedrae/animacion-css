@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
 
+@keyframes animation-logo {
+    from {
+        transform: translateX(5px);
+    }
+
+    to {
+        transform: translateX(30px);
+    }
+
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: white;
     font-family: 'Ubuntu', sans-serif;
-    color: #37474F;
+    color: #fffbe6;
 }
 
 /* mobile first*/
@@ -35,21 +46,39 @@ body {
 .header {
     grid-area: header;
     width: 100%;
-    height: 30px;
+    height: 50px;
+    padding-bottom: 20px;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    padding: 20px;
-    background-color: #78909C;
-    color: white;
+
+    background-color: #356859;
+    color: #fffbe6;
     border-radius: 15px 15px 0px 0px;
 }
 
 .logo {
-    background-color: crimson;
+    padding: 10px;
+
+
 }
 
+.logo-img {
+    width: 50px;
+    animation-name: animation-logo;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+    transform: translateX(20px);
+}
+
+
+
 .navbar {
+    padding: 20px;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -61,12 +90,25 @@ body {
     justify-content: space-between;
     gap: 20px;
 
+
 }
 
-.menu-item:hover {
+.menu a {
+    color: #fffbe6;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu-item {
+    transition: transform 2s;
+}
+
+.menu-item:hover,
+.menu-item:focus-visible {
     color: #37474F;
     cursor: pointer;
     text-shadow: 1px 0 10px #546E7A;
+    transition: translateY(-15px);
 }
 
 .grilla {
@@ -78,29 +120,48 @@ body {
     gap: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: #fffbe6;
 }
 
 .foto {
     padding: 10px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
 }
 
 .foto img {
     width: 300px;
+
+
+    aspect-ratio: 1;
+    object-fit: cover;
+    outline: 150px solid #0009;
+    outline-offset: -200px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.foto img:hover {
+    outline: 2px solid #fd5523;
+    outline-offset: 10px;
 }
 
 .footer {
     width: 100%;
     grid-area: footer;
-    background-color: #37474F;
-    color: #CFD8DC;
+    background-color: #356859;
+    color: #fffbe6;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding-bottom: 20px;
     border-radius: 0px 0px 15px 15px;
 }
 
 .socialmedia {
     padding-bottom: 10px;
+    padding-top: 20px;
+
 }
