@@ -8,6 +8,6 @@ Para desarrollar estoy usando un macbook air con una resolución de 1440x900, si
 
 
 
-[link repo](https://github.com/fisaavedrae/electric-car-store)
+[link repo](https://github.com/fisaavedrae/animacion-css)
 
-[link live app](https://electric-car-store.vercel.app/)
+[link live app](https://animacion-css-three.vercel.app/)
